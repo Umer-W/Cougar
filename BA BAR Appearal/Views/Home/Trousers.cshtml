@@ -1,0 +1,66 @@
+﻿<html>
+	<head>
+		<style>
+			main{
+				margin:50px 180px 20px 180px;
+				box-sizing:border-box;
+				font-family:Verdana;
+
+
+			}
+			.location{
+				font-size:14px;
+			}
+			.Type{
+				font-weight:900;
+			}
+			.shirts{
+				display:flex;
+				flex-wrap:wrap;
+			}
+			.shirt{
+				width:45%;
+				margin:2%;
+			}
+			img{
+				width:100%;
+			}
+			.del{
+				color:black;
+				margin-right:5px;
+			}
+			.price{
+				color:red;
+			}
+			.para p{
+				text-align:center;
+				margin:5% 20% 0% 20%;
+			}
+		</style>
+	</head>
+	<body>
+		@Html.Partial("_headerPartial")
+
+		<main>
+             <p class="location">Home / Men T-Shirts</p>
+			 <br />
+			
+			
+			 <h3 class="Type">Men T-Shirts</h3>
+			 <div class="shirts">
+
+			
+			 @await Component.InvokeAsync("TrouserComponent");
+
+			 </div>
+
+			 <div class="para">
+				 <p>
+					 Timeless clothing options, the t-shirts for men are always trending in the men's fashion zones. From the lightest to the darkest colors, exquisite design, and patterns, Cougar stocks every type of Men T-shirts that has ever been designed. Buy the best and high-end t-shirts at Cougar to bedeck yourself in a unique and stylish fashion.
+				 </p>
+			 </div>
+		</main>
+
+		@Html.Partial("_footerPartial")
+	</body>
+</html>

@@ -1,0 +1,113 @@
+﻿<html>
+<head>
+
+	<style>
+				body{
+					margin: 0px;
+					padding: 0px;
+				}
+		.header{
+			display: flex;
+			background-color:white;
+			justify-content: space-around;
+			align-items: center;
+			border-bottom: 1px solid rgba(12, 12, 12, 0.212);
+			position:sticky;
+			top: 0px;
+			height: 100px;
+			z-index:15;
+
+		}
+		ul{
+			display: flex;
+			align-item:center;
+			list-style: none;
+			margin:0px;
+			padding:0px;
+
+		}
+		ul a{
+			text-decoration: none;
+			color: black;
+			font-size: 18px;
+			font-family: sans-serif;
+			margin-top:5px;
+
+		}
+		li{
+			display:flex;
+			align-item:center;
+
+
+		}
+		.firstHeader{
+			background-color: black;
+			color: white;
+			text-align: center;
+			height:37.2px;
+		}
+		h4{
+			margin: 0px;
+			padding: 9px;
+			font-weight: lighter;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 17px;
+
+		}
+		.logo{
+
+		}
+		.nav{
+			margin-left:15px;
+			margin-right:15px;
+		}
+		.navMenu{
+			margin-right:80px;
+			
+		}
+		.firstUl{
+			width:500px;
+			display:flex;
+			justify-content:start;
+			align-item:center;
+		}
+		.secondUl{
+			width:500px;
+			display:flex;
+			justify-content:end;
+
+		}
+		.logos{
+			margin-left:30px;
+			/*margin-right:15px;*/
+		}
+	</style>
+
+
+</head>
+<body>
+	<div class="firstHeader">
+		<h4>
+			Free delivery for orders above PKR 2500/-
+		</h4>
+	</div>
+	<div class="header">
+		<ul class="firstUl">
+			<li ><img src="/lib/menu.png" class="navMenu" /></li>
+			<li class="nav"><a href="/Home/Men">Men</a></li>
+			<li class="nav"><a href="/Home/Women">Women</a></li>
+			<li class="nav"><a href="/Home/Kurti">kurti</a></li>
+		</ul>
+		<a href="/Home">
+
+		<img src="	https://cdn.shopify.com/s/files/1/0268/9715/4090/files/logo_2_180x.png?v=1652962627" class="logo" />
+		</a>
+		<ul class="secondUl">
+			<li><a class="logos" href="/Account/Login"><img src="/lib/user.png" alt="User icon" /></a></li>
+			<li><a class="logos" href="#"><img src="/lib/search.png" alt="search icon"/></a></li>
+			<li><a class="logos" href="#"><img src="/lib/bag.png" alt="bag icon"/></a></li>
+		</ul>
+
+	</div>
+</body>
+</html>

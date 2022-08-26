@@ -1,0 +1,49 @@
+﻿@using BA_BAR_Appearal.Models
+@model User
+<html>
+	<head>
+		<title>
+			Account
+		</title>
+		<style>
+			main{
+				margin:100px 600px 200px 600px;
+				text-align:center;
+				font-family:Verdana;
+				display:flex;
+				flex-direction:column;
+				align-items:center;
+			}
+			.form{
+			font-weight:600;
+			width:100%;
+			text-align:start;
+			}
+			form input{
+				font-size:large;
+				margin:10px 0px;
+				width:100%;
+				padding:2%;
+			}
+			.submitBtn{
+				background-color:black;
+				color:white;
+			}
+			a{
+			text-decoration:none;
+			color:black;
+			}
+		</style>
+
+	</head>
+	<body>
+		@Html.Partial("_headerPartial")
+		<main>
+			<h1>You are Logged in Successfully</h1>
+			<div class="form">
+
+			</div>
+		</main>
+		@Html.Partial("_footerPartial")
+	</body>
+</html>

@@ -1,0 +1,171 @@
+﻿@{
+	Layout="~/Views/shared/_Layout.cshtml";
+}
+
+
+<html>
+<head>
+	<title>
+		Men
+	</title>
+	<style>
+		main{
+			margin:0px;
+			padding:0px;
+			box-sizing:border-box;
+			font-family:Verdana;
+		}
+		a{
+			text-decoration:none;
+			color:black;
+
+		}
+		.para{
+			text-align:center;
+			font-family:candara;
+			font-weight:500;
+			font-size:x-large;
+			margin:5% 20%;
+		}
+		.menCloth{
+			display:flex;
+			justify-content:center;
+
+		}
+		.firstType{
+			width:20%;
+			margin:10px 39px 0px 18px;
+			display:flex;
+			flex-direction:column;
+
+		}
+		.secondType{
+			width:44%;
+
+		}
+		.thirdType{
+			width:20%;
+			margin:10px 20px 0px 39px;
+			display:flex;
+			flex-direction:column;
+
+		}
+		h2{
+			margin:0px;
+		}
+		.firstCloth ,.secondCloth, .second, .first{
+			margin:0px 0px 30px 0px;
+		}
+		@@media only screen and (max-width: 700px) {
+
+				main{
+			margin:0px;
+			padding:0px;
+			box-sizing:border-box;
+			font-family:Verdana;
+		}
+		a{
+			text-decoration:none;
+			color:black;
+
+		}
+		.para{
+			text-align:center;
+			font-family:candara;
+			font-weight:500;
+			font-size:x-large;
+			margin:5% 10%;
+		}
+		.menCloth{
+			display:flex;
+			flex-direction:column;
+			align-items:center;
+
+		}
+		.firstType{
+			width:50%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around
+		}
+		.secondType{
+			width:44%;
+
+		}
+		.thirdType{
+			width:50%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+
+		}
+		h2{
+			margin:0px;
+		}
+		.firstCloth ,.secondCloth, .second, .first{
+			padding:6%;
+		}
+
+			}
+	</style>
+</head>
+<body>
+	
+	<main>
+
+		<img class="mySlides" src="/lib/MenCougarImg1.jpg" style="width:100%">
+		<div class="para">
+			<p>Seek out adorable outfits and be à la mode this season. Cougar presents you an assortment of designs and patterns that are up to the minute, including T-Shirts, Casual Shirts, Polos, Jeans, Pants,trousers,shorts and many more. The wide variety of hues is offered by Cougar for  such as tie & dye,  double colored, shaded colored, etc. Furthermore, if you are color obsessed and prefer single color family, than go for it as we have a variety of monochromatic color palette. </p>
+		</div>
+		<div class="menCloth">
+			<div class="firstType">
+				<div class="firstCloth">
+					
+					<a href="/Home/T_Shirts"><img src="/lib/MenCloth1.jpg" alt="T-Shirt-Image" width="100%"/>
+					<h2>T-Shirts</h2>
+					</a>
+				</div>
+				<div class="secondCloth">
+
+					<a href="/Home/Casual_Shirts">
+					<img src="/lib/MenCloth2.jpg" alt="casual_shirts_Image" width="100%"/>
+					<h2>Casual Shirts</h2>
+					</a>
+					
+				</div>
+			</div>
+			<div class="secondType">
+
+				<a href="/Home/Freedom_Polos">
+				<img src="/lib/MenCloth3.jpg" alt="casual_shirts_Image" width="100%"/>
+					<h2>Freedom Polos</h2>
+					</a>
+					
+			</div>
+			<div class="thirdType">
+				<div class="first">
+
+					<a href="/Home/Polos">
+					<img src="/lib/MenCloth4.jpg" alt="casual_shirts_Image" width="100%"/>
+					<h2>Polos</h2>
+
+					</a>
+					
+				</div>
+				<div class="second">
+
+					<a href="/Home/Trousers">
+					<img src="/lib/MenCloth5.jpg" alt="casual_shirts_Image" width="100%"/>
+					<h2>Trousers</h2>
+
+					</a>
+					
+				</div>
+			</div>
+		</div>
+
+
+	</main>
+	
+</body>
+</html>

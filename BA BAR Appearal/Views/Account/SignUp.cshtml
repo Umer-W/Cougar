@@ -1,0 +1,56 @@
+﻿@using BA_BAR_Appearal.Models
+@model User
+<html>
+	<head>
+		<title>
+			Account
+		</title>
+		<style>
+			main{
+				margin:10% 35% 15% 35%;
+				text-align:center;
+				font-family:Verdana;
+			}
+				form{
+			font-weight:600;
+			width:100%;
+			text-align:start;
+			}
+			form input{
+				font-size:large;
+				margin:10px 0px;
+				width:100%;
+				padding:2%;
+			}
+			.submitBtn{
+				background-color:black;
+				color:white;
+			}
+			a{
+				text-decoration:none;
+				color:black
+			}
+		</style>
+
+	</head>
+	<body>
+		@Html.Partial("_headerPartial")
+		<main>
+			<h1>SignUp</h1>
+			<form asp-controller="Account" asp-action="Registered" method="post">
+
+			<label asp-for="Name"></label>
+			<input asp-for="Name"/><br />
+			<label asp-for="Email"></label>
+			<input asp-for="Email"/>
+			<label asp-for="Phone"></label>
+			<input asp-for="Phone"/>
+			<label asp-for="Password"></label>
+			<input asp-for="Password"/>
+			<input class="submitBtn" type="submit" value="Sign Up"/>
+			<a href="/Account/Login">Already have Account</a>
+			</form>
+		</main>
+		@Html.Partial("_footerPartial")
+	</body>
+</html>

@@ -1,0 +1,278 @@
+﻿@{
+	Layout="~/Views/shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+	<title>
+		Home Page
+	</title>
+	<style>
+		body {
+			margin: 0px;
+			padding: 0px;
+			font-family:  arial;
+			box-sizing:border-box;
+		}
+
+
+		.mySlides {display:none;}
+
+		.btns{
+			display:flex;
+			justify-content:end;
+			margin-right:13px;
+		}
+		.prev{
+			margin-right:79px;
+			cursor:pointer;
+
+		}
+		.next{
+			cursor:pointer;
+
+		}
+		.clothBag{
+			display:flex;
+			justify-content:center;
+		}
+		.clothPics{
+			width:100px;
+		}
+		.clothPic{
+			width:30%;
+			padding:10px 24px;
+			display:flex;
+			flex-direction:row;
+		}
+		.clothDetail{
+			width:33%;
+			padding:10px 60px;
+
+
+		}
+		.sidePics{
+			padding:10px;
+		}
+		h1{
+			margin:0px;
+			padding:0px;
+		}
+		.quantity{
+			font-weight:700;
+		}
+		.bgImg{
+			background-image: url('/lib/cougerImg3.jpg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			height:400px;
+			z-index:2;
+		}
+		.blog{
+			background-color:white;
+			width:23%;
+			height:60%;
+			position:relative;
+			top:10%;
+			left:5%;
+			z-index:3;
+		}
+		.subscribe{
+			display:flex;
+			align-items:center;
+			justify-content:space-around;
+			background-color:#f2f2f2;
+
+			height:200px;
+		}
+		.counter{
+			border:1px solid black;
+			padding:10px 0px 8px 0px;
+			font-size:x-large;
+
+		}
+		.btn{
+			border:none;
+			background-color:transparent;
+			font-size:larger;
+			cursor:pointer;
+			margin:0px;
+			padding:6px;
+		}
+		.btn:hover{
+			background-color:lightgray;
+			margin:0px;
+			padding:6px
+
+		}
+		.sizeBtn{
+			background-color:transparent;
+			padding:9px;
+			font-size:larger;
+		}
+		.sizeBtn:focus{
+			background-color:lightgray;
+		}
+		.colorBtn{
+			background-color:transparent;
+			padding:9px;
+			font-size:larger;
+		}
+		.colorBtn:hover{
+			background-color:lightgray;
+		}
+		.cartBtn{
+			background-color:black;
+			color:white;
+			padding:9px;
+			font-size:larger;
+			width:100%;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+
+		<div>
+			<img class="mySlides" src="/lib/cougerImg1.jpg" style="width:100%">
+			<img class="mySlides" src="/lib/cougerImg2.jpg" style="width:100%">
+		</div>
+		
+		<br />
+		<div class="btns">
+			<div class="prev">
+				<h2>&#60 PREV</h2>
+			</div>
+			<div class="next">
+				<h2>NEXT &#62 </h2>
+
+			</div>
+
+		</div>
+
+
+		<div class="clothBag">
+			<div class="clothPics">
+				<div class="sidePics">
+					<img src="/lib/Tshirt1.jpg" width="100%" />
+				</div>
+				<div class="sidePics">
+					<img src="/lib/cougarImg5.jpg" width="100%"/>
+				</div>
+				<div class="sidePics">
+					<img src="/lib/cougarImg6.jpg" width="100%"/>
+				</div>
+				<div class="sidePics">
+					<img src="/lib/cougarImg7.jpg" width="100%"/>
+
+				</div>
+				<div class="sidePics">
+					<img src="/lib/cougarImg8.jpg" width="100%"/>
+
+				</div>
+
+
+
+			</div>
+			<div class="clothPic">
+				<img src="/lib/Tshirt1.jpg" width="100%" />
+			</div>
+			<div class="clothDetail">
+				<h1>White Oversized T-Shirt</h1>
+				<br />
+				<h3 style="margin:0px;padding:0px;font-weight:300">Rs.2,799.00</h3>
+				<br />
+				<p class="quantity">QUANTITY</p>
+				<span class="counter">
+
+					<button class="btn " type="button" id="decrement" onclick='handleChange("-")' >-</button>
+					<span id="demo">0</span>
+					<button class="btn" id="increment" onclick='handleChange("+")'>+</button>
+				</span>
+				<br />
+				<br />
+				<hr />
+				<br />
+				<button class="sizeBtn">XS</button>
+				<button class="sizeBtn">S</button>
+				<button class="sizeBtn">M</button>
+				<button class="sizeBtn">L</button>
+				<button class="sizeBtn">XL</button>
+				<div>
+					<br />
+					<br />
+				<button class="colorBtn">White</button>
+
+				</div>
+				<div>
+					<br />
+					<br />
+					<br />
+				<button class="cartBtn">Add to cart</button>
+
+				</div>
+			</div>
+		</div>
+		<br />
+		<br />
+		<div class="bgImg">
+			<div class="blog">
+				Cougar Blogs
+			</div>
+		</div>
+		<div class="subscribe">
+			<div>
+				<h1>
+
+					Sign up and save
+				</h1>
+				<p>
+					Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.
+				</p>
+			</div>
+			<div>
+				<input placeholder="Enter Your Email" />
+				<input type="submit" value="Subscribe" />
+			</div>
+		</div>
+		<img src="/lib/cougerImg4.jpg" width="100%" />
+	</div>
+
+
+	<script>
+var demo = document.getElementById("demo");
+		function handleChange(n) {
+           
+            if (n === "-") {
+                if (demo.innerHTML > 0) {
+
+                demo.innerHTML--;
+				}
+            }
+            else if (n === "+") {
+            demo.innerHTML++;
+
+			}
+		}
+
+
+
+
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) { myIndex = 1 }
+			x[myIndex - 1].style.display = "block";
+			setTimeout(carousel, 2800); // Change image every 2.2 seconds
+		}
+	</script>
+</body>
+</html>

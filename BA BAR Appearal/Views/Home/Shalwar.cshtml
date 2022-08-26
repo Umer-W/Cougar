@@ -1,0 +1,82 @@
+﻿<html>
+	<head>
+		<title>
+			Top
+		</title>
+		<style>
+			main{
+				margin:50px 180px 20px 180px;
+				box-sizing:border-box;
+				font-family:Verdana;
+
+
+			}
+			.location{
+				font-size:14px;
+			}
+			.Type{
+				font-weight:900;
+			}
+			.shirts{
+				display:flex;
+				flex-wrap:wrap;
+			}
+			.shirt{
+				width:45%;
+				margin:2%;
+			}
+			img{
+				width:100%;
+			}
+			.del{
+				color:black;
+				margin-right:5px;
+			}
+			.price{
+				color:red;
+			}
+			.para p{
+				text-align:center;
+			margin: 5% 20% 0% 20%;
+			}
+		</style>
+	</head>
+	<body>
+		@Html.Partial("_headerPartial")
+
+		<main>
+             <p class="location">Home / Shalwar</p>
+			 <br />
+			
+			
+			 <h3 class="Type">Shalwar</h3>
+			 <div class="shirts">
+
+			 <div class="shirt">
+				 <img src="/lib/Shalwar1.jpg"/>
+				 <p class="location">Maroon Round Neck T-Shirt</p>
+				 <p class="location price"><del class="del">Rs. 1,499.00 </del>  Rs. 1,049.00</p>
+			 </div>
+			  <div class="shirt">
+				 <img src="/lib/Shalwar2.jpg"/>
+				 <p class="location">Maroon Round Neck T-Shirt</p>
+				 <p class="location price"><del class="del">Rs. 1,499.00 </del>  Rs. 1,049.00</p>
+			 </div>
+			  <div class="shirt">
+				 <img src="/lib/Shalwar3.jpg"/>
+				 <p class="location">Maroon Round Neck T-Shirt</p>
+				 <p class="location price"><del class="del">Rs. 1,699.00 </del>  Rs. 1,189.00</p>
+			 </div>
+			 
+			 </div>
+
+			 <div class="para">
+				 <p>
+					 Timeless clothing options, the t-shirts for men are always trending in the men's fashion zones. From the lightest to the darkest colors, exquisite design, and patterns, Cougar stocks every type of Men T-shirts that has ever been designed. Buy the best and high-end t-shirts at Cougar to bedeck yourself in a unique and stylish fashion.
+				 </p>
+			 </div>
+		</main>
+
+		@Html.Partial("_footerPartial")
+	</body>
+</html>
