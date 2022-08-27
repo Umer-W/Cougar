@@ -63,6 +63,24 @@ namespace BA_BAR_Appearal.Components
                 path = "/lib/Polos_Shirt9.jpg",
                 price = 1049.00
             });
+            polo.Add(new Polos
+            {
+                name = "Maroon Round Neck T-shirt",
+                path = "/lib/Polos_Shirt10.jpg",
+                price = 1049.00
+            });
+            polo.Add(new Polos
+            {
+                name = "Maroon Round Neck T-shirt",
+                path = "/lib/Polos_Shirt11.jpg",
+                price = 1049.00
+            });
+            polo.Add(new Polos
+            {
+                name = "Maroon Round Neck T-shirt",
+                path = "/lib/Polos_Shirt12.jpg",
+                price = 1049.00
+            });
             return View(polo);
         }
     }
