@@ -1,0 +1,26 @@
+﻿@model List<BA_BAR_Appearal.Models.Polos>
+<html>
+	<head>
+		<title>
+			Polos
+		</title>
+	</head>
+	<body>
+		
+
+		@foreach (BA_BAR_Appearal.Models.Polos item in Model)
+		{
+			
+			  <div class="shirt">
+				 <img src="@item.path"/>
+				 <p class="location">@item.name</p>
+				 <p class="location price"><del class="del">Rs. 1,499.00 </del> @item.price</p>
+			 </div>
+
+			
+		}
+		
+
+	
+	</body>
+</html>
